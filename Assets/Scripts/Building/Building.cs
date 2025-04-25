@@ -1,10 +1,15 @@
-using Unity.VisualScripting;
+using System;
 using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    [SerializeField] private BuildingFunction function;
+    public BuildingFunction Function { get { return function; } }
     public bool IsPlaced { get; private set; }
     public BoundsInt area;
+
+    // Events
+    public static event Action<Building, Vector3Int> OnPlaced;
 
     public void Place()
     {
@@ -13,6 +18,9 @@ public class Building : MonoBehaviour
         areaTemp.position = positionInt;
         IsPlaced = true;
         GridBuildingSystem.Instance.TakeArea(areaTemp);
+
+        // Event
+        OnPlaced?.Invoke(this, positionInt);
     }
 
     public bool CanBePlaced()
@@ -26,5 +34,11 @@ public class Building : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    // TODO: Can be unique per type of building.
+    public void Pollute()
+    {
+
     }
 }
