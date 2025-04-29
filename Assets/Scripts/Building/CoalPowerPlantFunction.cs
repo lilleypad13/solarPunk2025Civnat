@@ -12,7 +12,7 @@ public class CoalPowerPlantFunction : BuildingFunction
         Debug.Log($"{gameObject.name} polluted!");
         for (int i = 0; i < natureCells.Length; i++)
         {
-            natureCells[i].Pollute(12);
+            natureCells[i].Pollute(pollutionAreaValue);
         }
     }
 }

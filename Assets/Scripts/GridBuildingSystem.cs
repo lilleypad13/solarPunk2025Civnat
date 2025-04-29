@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
@@ -52,48 +50,48 @@ public class GridBuildingSystem : MonoBehaviour
         TileBases.Add(TileType.Red, blockedTile);
     }
 
-    private void Update()
-    {
-        if (temp == null)
-        {
-            return;
-        }
+    //private void Update()
+    //{
+    //    if (temp == null)
+    //    {
+    //        return;
+    //    }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (EventSystem.current.IsPointerOverGameObject(0))
-            {
-                return;
-            }
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        if (EventSystem.current.IsPointerOverGameObject(0))
+    //        {
+    //            return;
+    //        }
 
-            if (!temp.IsPlaced)
-            {
-                Vector2 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3Int cellPosition = gridLayout.LocalToCell(touchPosition);
+    //        if (!temp.IsPlaced)
+    //        {
+    //            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //            Vector3Int cellPosition = gridLayout.LocalToCell(touchPosition);
 
-                if(previousPosition != cellPosition)
-                {
-                    temp.transform.localPosition = gridLayout.CellToLocalInterpolated(
-                        cellPosition)
-                        + placementOffset;
-                    previousPosition = cellPosition;
-                    FollowBuilding();
-                }
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (temp.CanBePlaced())
-            {
-                temp.Place();
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ClearArea();
-            Destroy(temp.gameObject);
-        }
-    }
+    //            if(previousPosition != cellPosition)
+    //            {
+    //                temp.transform.localPosition = gridLayout.CellToLocalInterpolated(
+    //                    cellPosition)
+    //                    + placementOffset;
+    //                previousPosition = cellPosition;
+    //                OutlineBuildingArea(temp);
+    //            }
+    //        }
+    //    }
+    //    else if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        if (temp.CanBePlaced())
+    //        {
+    //            temp.Place();
+    //        }
+    //    }
+    //    else if (Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        ClearArea();
+    //        Destroy(temp.gameObject);
+    //    }
+    //}
 
     #region Tilemap Handling
     private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
@@ -131,22 +129,22 @@ public class GridBuildingSystem : MonoBehaviour
     public void InitializeWithBuilding(GameObject building)
     {
         temp = Instantiate(building, Vector3.zero, Quaternion.identity).GetComponent<Building>();
-        FollowBuilding();
+        OutlineBuildingArea(temp);
     }
 
-    private void ClearArea()
+    public void ClearArea()
     {
         TileBase[] toClear = new TileBase[previousArea.size.x * previousArea.size.y * previousArea.size.z];
         FillTiles(toClear, TileType.Empty);
         tempTileMap.SetTilesBlock(previousArea, toClear);
     }
 
-    private void FollowBuilding()
+    public void OutlineBuildingArea(Building building)
     {
         ClearArea();
 
-        temp.area.position = gridLayout.WorldToCell(temp.gameObject.transform.position);
-        BoundsInt buildingArea = temp.area;
+        building.area.position = gridLayout.WorldToCell(building.gameObject.transform.position);
+        BoundsInt buildingArea = building.area;
 
         TileBase[] baseArray = GetTilesBlock(buildingArea, mainTileMap);
 
@@ -190,4 +188,16 @@ public class GridBuildingSystem : MonoBehaviour
         SetTilesBlock(area, TileType.Empty, TempTileMap);
         SetTilesBlock(area, TileType.Green, mainTileMap);
     }
+
+    #region Building Helpers
+    public Vector3Int GetCellPosition(Vector2 screenPosition)
+    {
+        return gridLayout.LocalToCell(screenPosition);
+    }
+
+    public Vector3 GetOffsetPositionFromCell(Vector3Int cellPosition)
+    {
+        return gridLayout.CellToLocalInterpolated(cellPosition) + placementOffset;
+    }
+    #endregion
 }

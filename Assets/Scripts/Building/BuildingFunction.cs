@@ -3,20 +3,14 @@ using UnityEngine;
 
 public abstract class BuildingFunction : MonoBehaviour
 {
+    [Header("Dimensions")]
     [SerializeField] private BoundsInt pollutionArea;
     public BoundsInt PollutionArea { get { return pollutionArea; } }
     [SerializeField] private Vector3Int pollutionAreaOffset;
     public Vector3Int PollutionAreaOffset {  get { return pollutionAreaOffset; } }
 
-    //public BoundsInt EffectiveArea
-    //{
-    //    get
-    //    {
-    //        return new BoundsInt(
-    //            pollutionArea.min + pollutionAreaOffset, 
-    //            pollutionArea.size);
-    //    }
-    //}
+    [Header("Parameters")]
+    [SerializeField] protected int pollutionAreaValue = 0;
 
     // TODO
     // Most likely takes a parameter of an area of tiles

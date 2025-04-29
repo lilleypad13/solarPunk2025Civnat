@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 3625043607559282579, guid: 0e526647180b10742bafa2321773d303, type: 3}
-  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  m_Color: {r: 0.73120815, g: 0.764151, b: 0.42172483, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7660727817868493310}
   - component: {fileID: 4999959587152413288}
   m_Layer: 0
-  m_Name: TestCoalPowerPlantContainer
+  m_Name: TestGoodPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   function: {fileID: 4999959587152413288}
   area:
     m_Position: {x: 0, y: 1, z: 0}
-    m_Size: {x: 2, y: 2, z: 1}
+    m_Size: {x: 1, y: 1, z: 1}
 --- !u!114 &4999959587152413288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollutionArea:
     m_Position: {x: 0, y: 0, z: 0}
-    m_Size: {x: 4, y: 4, z: 1}
+    m_Size: {x: 3, y: 3, z: 1}
   pollutionAreaOffset: {x: -1, y: -1, z: 0}
-  pollutionAreaValue: 12
+  pollutionAreaValue: -25
