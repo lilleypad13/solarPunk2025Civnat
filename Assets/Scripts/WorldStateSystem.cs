@@ -80,7 +80,7 @@ public class WorldStateSystem : MonoBehaviour
         {
             buildingStates[i].Building.Function.Pollute(
                 GetNatureCellsInArea(
-                    buildingStates[i].CellPosition,
+                    buildingStates[i].CellPosition + buildingStates[i].Building.Function.PollutionAreaOffset,
                     buildingStates[i].Building.Function.PollutionArea));
         }
 
