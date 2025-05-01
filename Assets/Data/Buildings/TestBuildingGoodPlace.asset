@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TestBuildingGoodPlace
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 45eeb079fbad23b41b34b1badaca7873, type: 3}
-  uiSprite: {fileID: -3346134477904140528, guid: 059c9636624e1b64493c94bc9619e62e, type: 3}
+  uiSprite: {fileID: 5455051956876041546, guid: a458bc3f98f0b66488b9bf5251d42a7f, type: 3}

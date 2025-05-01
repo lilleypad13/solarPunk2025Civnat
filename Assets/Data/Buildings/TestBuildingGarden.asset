@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TestBuildingGarden
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 2e4d6951189739447b8228aad32c45cc, type: 3}
-  uiSprite: {fileID: -3346134477904140528, guid: 059c9636624e1b64493c94bc9619e62e, type: 3}
+  uiSprite: {fileID: 2472185900035324643, guid: d23a330bbc6638447a8e6951073ebca1, type: 3}
