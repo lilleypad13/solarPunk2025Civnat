@@ -41,7 +41,7 @@ public class BuildButtonManager : MonoBehaviour
     {
         for (int i = 0;i < buildButtons.Count; i++)
         {
-            Destroy(buildButtons[i]);
+            Destroy(buildButtons[i].gameObject);
         }
         buildButtons.Clear();
     }

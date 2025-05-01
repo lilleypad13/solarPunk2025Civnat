@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,6 +11,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BuildButtonManager buildButtonManager;
 
     private BuildingSetState activeSet;
+    private int phaseIndex = 0;
+
+    // Events
+    public static event Action OnPhaseConcluded;
 
     private void OnEnable()
     {
@@ -64,6 +69,27 @@ public class GameManager : MonoBehaviour
         {
             // Advance
             Debug.Log("Advance");
+            // Increment phase
+            phaseIndex++;
+            // End Phase Event / World Tick
+            OnPhaseConcluded?.Invoke();
+            if (phaseIndex < progressionData.PhaseSets.Length)
+            {
+                // Continue
+                // Clear out building buttons.
+                buildButtonManager.Clear();
+                // Populate with next progression phase of buttons.
+                // TODO: Skipping choices inclusion for quicker itteration and testing for now.
+                SetupBuildingSet(progressionData.PhaseSets[phaseIndex].BuildingSets[0]);
+            }
+            else
+            {
+                // End
+                Debug.Log("End of Progression Phases.");
+                // Clear out building buttons.
+                buildButtonManager.Clear();
+            }
+            
         }
     }
 }

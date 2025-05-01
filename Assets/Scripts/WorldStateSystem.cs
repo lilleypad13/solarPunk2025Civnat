@@ -21,11 +21,13 @@ public class WorldStateSystem : MonoBehaviour
     private void OnEnable()
     {
         Building.OnPlaced += AddBuilding;
+        GameManager.OnPhaseConcluded += WorldTick;
     }
 
     private void OnDisable()
     {
         Building.OnPlaced -= AddBuilding;
+        GameManager.OnPhaseConcluded -= WorldTick;
     }
 
     private void Start()
