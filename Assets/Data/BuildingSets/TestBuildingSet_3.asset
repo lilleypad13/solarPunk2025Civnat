@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d61ec77b660624a96162362f4f9b58, type: 3}
+  m_Name: TestBuildingSet_3
+  m_EditorClassIdentifier: 
+  countBuildingsToPlace: 1
+  canDuplicatePlacements: 0
+  buildings:
+  - {fileID: 11400000, guid: fadd2a7977c8ab240aec12cb8e0212d2, type: 2}
+  - {fileID: 11400000, guid: 4781bf965e8a54d4b9ce30d2bc1933df, type: 2}

@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("UI")]
-    [SerializeField] private BuildButtonManager buildButtonManager;
-
     [Header("Data")]
     [SerializeField] private BuildingSetData baseBuildingSet;
+    [SerializeField] private GameProgressionData progressionData;
+
+    [Header("UI")]
+    [SerializeField] private BuildButtonManager buildButtonManager;
 
     private BuildingSetState activeSet;
 
@@ -22,7 +23,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SetupBuildingSet(baseBuildingSet);
+        // TODO: Just setup for testing right now.
+        SetupBuildingSet(progressionData.PhaseSets[0].BuildingSets[0]);
     }
 
     public void SetupBuildingSet(BuildingSetData set)

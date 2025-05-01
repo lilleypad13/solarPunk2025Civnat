@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73364472d3d6f2d44b974d3b983907e2, type: 3}
+  m_Name: GameProgressionData
+  m_EditorClassIdentifier: 
+  phaseSets:
+  - buildingSets:
+    - {fileID: 11400000, guid: 1abf8dc7f87610f45a344e45707753f9, type: 2}
+  - buildingSets:
+    - {fileID: 11400000, guid: dd5508b519a16db4a940292501ea58d3, type: 2}
+    - {fileID: 11400000, guid: f3dea35861d7a2042a703775bffb15b0, type: 2}
+    - {fileID: 11400000, guid: 526954037381ad14ebbbb0c3b4679142, type: 2}
+  - buildingSets:
+    - {fileID: 11400000, guid: a38f483a2abfd8b419297b13f745f034, type: 2}
