@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d61ec77b660624a96162362f4f9b58, type: 3}
   m_Name: TestBuildingSet
   m_EditorClassIdentifier: 
-  buildingsToPlace: 4
-  canDuplicatePlacements: 1
+  countBuildingsToPlace: 2
+  canDuplicatePlacements: 0
   buildings:
   - {fileID: 11400000, guid: 0eede393b8a9ceb4fae35502562f00c1, type: 2}
   - {fileID: 11400000, guid: 126cf4e7defaf5f4092ff88876b0feea, type: 2}

@@ -11,8 +11,10 @@ public class BuildButton : MonoBehaviour
     [Header("Data")]
     [SerializeField] private Building buildingPrefab;
     public Building BuildingPrefab { get { return buildingPrefab; } }
+    public BuildingData Data { get; private set; }
 
-    public static event Action<Building> OnStartBuilding;
+
+    public static event Action<BuildingData> OnStartBuilding;
 
     private void OnEnable()
     {
@@ -26,8 +28,14 @@ public class BuildButton : MonoBehaviour
 
     public void Initialize(BuildingData data)
     {
+        Data = data;
         buttonImage.sprite = data.UiSprite;
         buildingPrefab = data.BuildingPrefab;
+    }
+
+    public void DisableInteraction()
+    {
+        button.interactable = false;
     }
 
     public void Clear()
@@ -39,6 +47,6 @@ public class BuildButton : MonoBehaviour
     private void InvokeBuildingEvent()
     {
         Debug.Log("Build Button Invoked Build Event!");
-        OnStartBuilding?.Invoke(buildingPrefab);
+        OnStartBuilding?.Invoke(Data);
     }
 }

@@ -19,6 +19,24 @@ public class BuildButtonManager : MonoBehaviour
         }
     }
 
+    public void DisableButtonInteraction(BuildingData data)
+    {
+        if (buildButtons != null)
+        {
+            for (int i = 0; i < buildButtons.Count; i++)
+            {
+                if(buildButtons[i] != null)
+                {
+                    if (buildButtons[i].Data == data)
+                    {
+                        Debug.Log($"Disabled build button {buildButtons[i].gameObject.name}");
+                        buildButtons[i].DisableInteraction();
+                    }
+                }
+            }
+        }
+    }
+
     public void Clear()
     {
         for (int i = 0;i < buildButtons.Count; i++)

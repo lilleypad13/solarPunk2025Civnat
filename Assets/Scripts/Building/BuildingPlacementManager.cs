@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,6 +10,10 @@ public class BuildingPlacementManager : MonoBehaviour
     private bool isPlacing = false;
     private Building currentBuilding;
     private Vector3Int previousPosition;
+    private BuildingData currentBuildingData;
+
+    // Events
+    public static event Action<BuildingData> OnBuildingPlaced;
 
     private void OnEnable()
     {
@@ -56,9 +61,10 @@ public class BuildingPlacementManager : MonoBehaviour
         }
     }
 
-    public void BeginPlacingBuilding(Building building)
+    public void BeginPlacingBuilding(BuildingData buildingData)
     {
-        currentBuilding = Instantiate(building, Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity).GetComponent<Building>();
+        currentBuildingData = buildingData;
+        currentBuilding = Instantiate(buildingData.BuildingPrefab, Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity).GetComponent<Building>();
         gridBuildingSystem.OutlineBuildingArea(currentBuilding);
         isPlacing = true;
     }
@@ -72,6 +78,10 @@ public class BuildingPlacementManager : MonoBehaviour
                 if (currentBuilding.CanBePlaced())
                 {
                     currentBuilding.Place();
+
+                    // Event Signaling
+                    OnBuildingPlaced?.Invoke(currentBuildingData);
+
                     EndPlacingBuilding();
                 }
             }
@@ -87,6 +97,7 @@ public class BuildingPlacementManager : MonoBehaviour
 
     public void EndPlacingBuilding()
     {
+        currentBuildingData = null;
         currentBuilding = null;
         isPlacing = false;
     }
