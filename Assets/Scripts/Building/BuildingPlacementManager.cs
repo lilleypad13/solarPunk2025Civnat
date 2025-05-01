@@ -6,27 +6,18 @@ public class BuildingPlacementManager : MonoBehaviour
     [Header("System")]
     [SerializeField] private GridBuildingSystem gridBuildingSystem;
 
-    [Header("UI")]
-    [SerializeField] private BuildButton[] buildButtons;
-
     private bool isPlacing = false;
     private Building currentBuilding;
     private Vector3Int previousPosition;
 
     private void OnEnable()
     {
-        for (int i = 0; i < buildButtons.Length; i++)
-        {
-            buildButtons[i].OnStartBuilding += BeginPlacingBuilding;
-        }
+        BuildButton.OnStartBuilding += BeginPlacingBuilding;
     }
 
     private void OnDisable()
     {
-        for (int i = 0; i < buildButtons.Length; i++)
-        {
-            buildButtons[i].OnStartBuilding -= BeginPlacingBuilding;
-        }
+        BuildButton.OnStartBuilding -= BeginPlacingBuilding;
     }
 
     private void Update()
