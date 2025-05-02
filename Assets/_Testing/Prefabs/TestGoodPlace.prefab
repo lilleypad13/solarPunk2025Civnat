@@ -154,3 +154,9 @@ MonoBehaviour:
     m_Size: {x: 3, y: 3, z: 1}
   pollutionAreaOffset: {x: -1, y: -1, z: 0}
   pollutionAreaValue: -25
+  inherentPollutionValue: 0
+  ecoAreaValue: 0
+  inherentEcoValue: 0
+  inherentEnergyValue: 0
+  inherentCommunityHealthValue: 15
+  pollutedInherentCommunityHealthValue: 5

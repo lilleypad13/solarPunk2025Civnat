@@ -11,24 +11,27 @@ public abstract class BuildingFunction : MonoBehaviour
 
     [Header("Parameters")]
     [SerializeField] protected int pollutionAreaValue = 0;
+    public int PollutionAreaValue { get { return pollutionAreaValue; } }
+    [SerializeField] protected int inherentPollutionValue = 0;
+    public int InherentPollutionValue { get {return inherentPollutionValue; } }
+    [SerializeField] protected int ecoAreaValue = 0;
+    public int EcoAreaValue { get { return ecoAreaValue; } }
+    [SerializeField] protected int inherentEcoValue = 0;
+    public int InherentEcoValue { get { return inherentEcoValue; } }
+    [SerializeField] protected int inherentEnergyValue = 0;
+    public int InherentEnergyValue { get { return inherentEnergyValue; } }
+    [SerializeField] protected int inherentCommunityHealthValue = 0;
+    public int InherentCommunityHealthValue { get { return inherentCommunityHealthValue; } }
+    [SerializeField] protected int pollutedInherentCommunityHealthValue = 0;
+    public int PollutedInherentCommunityHealthValue { get { return pollutedInherentCommunityHealthValue; } }
 
     // TODO
     // Most likely takes a parameter of an area of tiles
-    public abstract void Pollute(NatureCellState[] natureCells);
+    public abstract void ApplyAreaPollution(NatureCellState[] natureCells);
+    public abstract void ApplyAreaEco(NatureCellState[] natureCells);
+    public abstract int GetAppliedCommunityHealth(NatureCellState[] natureCells);
 
     // TODO
     // May not need any parameters
     public abstract void Generate();
-
-    // DEBUG
-    protected void OnDrawGizmosSelected()
-    {
-        //var offset = new Vector3(.5f, .5f, 0f);
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(pollutionArea.center, pollutionArea.size);
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireCube(pollutionArea.min + PollutionAreaOffset, Vector3Int.one);
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireCube(pollutionArea.max + PollutionAreaOffset, Vector3Int.one);
-    }
 }

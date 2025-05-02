@@ -7,12 +7,33 @@ public class CoalPowerPlantFunction : BuildingFunction
         Debug.Log($"{gameObject.name} generated!");
     }
 
-    public override void Pollute(NatureCellState[] natureCells)
+    public override void ApplyAreaPollution(NatureCellState[] natureCells)
     {
-        Debug.Log($"{gameObject.name} polluted!");
+        //Debug.Log($"{gameObject.name} polluted!");
         for (int i = 0; i < natureCells.Length; i++)
         {
             natureCells[i].Pollute(pollutionAreaValue);
         }
+    }
+
+    public override void ApplyAreaEco(NatureCellState[] natureCells)
+    {
+        //Debug.Log($"{gameObject.name} area eco applied!");
+        for (int i = 0; i < natureCells.Length; i++)
+        {
+            natureCells[i].ApplyEco(ecoAreaValue);
+        }
+    }
+
+    public override int GetAppliedCommunityHealth(NatureCellState[] natureCells)
+    {
+        for (int i = 0; i < natureCells.Length; i++)
+        {
+            if (natureCells[i].PollutionLevel > 0)
+            {
+                return PollutedInherentCommunityHealthValue;
+            }
+        }
+        return InherentCommunityHealthValue;
     }
 }

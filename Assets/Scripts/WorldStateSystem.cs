@@ -14,6 +14,10 @@ public class WorldStateSystem : MonoBehaviour
     // Data
     private List<BuildingState> buildingStates = new List<BuildingState>();
     private NatureCellState[] natureCellStates;
+    private int totalPollution = 0;
+    private int totalEco = 0;
+    private int totalEnergy = 0;
+    private int totalCommunityHealth = 0;
 
     [Header("TESTING")]
     [SerializeField] private Gradient grassPollutionGradient;
@@ -78,23 +82,58 @@ public class WorldStateSystem : MonoBehaviour
 
     private void WorldTick()
     {
+        // Handle Inherent Values
+        int tickPollution = 0;
+        int tickEnergy = 0;
+        int tickEco = 0;
+        int tickCommunityHealth = 0;
         for (int i = 0; i < buildingStates.Count; i++)
         {
-            buildingStates[i].Building.Function.Pollute(
+            tickPollution += buildingStates[i].Building.Function.InherentPollutionValue;
+            tickEnergy += buildingStates[i].Building.Function.InherentEnergyValue;
+            tickEco += buildingStates[i].Building.Function.InherentEcoValue;
+        }
+
+        // Handle Area Values
+        for (int i = 0; i < buildingStates.Count; i++)
+        {
+            buildingStates[i].Building.Function.ApplyAreaPollution(
+                GetNatureCellsInArea(
+                    buildingStates[i].CellPosition + buildingStates[i].Building.Function.PollutionAreaOffset,
+                    buildingStates[i].Building.Function.PollutionArea));
+            buildingStates[i].Building.Function.ApplyAreaEco(
+                GetNatureCellsInArea(
+                    buildingStates[i].CellPosition + buildingStates[i].Building.Function.PollutionAreaOffset,
+                    buildingStates[i].Building.Function.PollutionArea));
+            tickCommunityHealth += buildingStates[i].Building.Function.GetAppliedCommunityHealth(
                 GetNatureCellsInArea(
                     buildingStates[i].CellPosition + buildingStates[i].Building.Function.PollutionAreaOffset,
                     buildingStates[i].Building.Function.PollutionArea));
         }
 
+        // Apply Updates to Cells
+        for (int i = 0; i < natureCellStates.Length; i++)
+        {
+            natureCellStates[i].ApplyCumulativeValues();
+        }
+
+        // Update core game values
+        totalEnergy += tickEnergy;
+        UpdateTotalPollutionValue(tickPollution);
+        UpdateTotalEcoValue(tickEco);
+        totalCommunityHealth += tickCommunityHealth;
+
+        // Debug
         DebugNatureCells();
     }
 
+
+    #region Data Methods
     private void AddBuilding(Building building, Vector3Int position)
     {
         buildingStates.Add(new BuildingState(building, position));
     }
 
-    #region Data Methods
     private void CountCurrentDefaultTiles()
     {
         int counter = 0;
@@ -138,6 +177,26 @@ public class WorldStateSystem : MonoBehaviour
 
         return foundCells.ToArray();
     }
+
+    private void UpdateTotalPollutionValue(int _tickPollution)
+    {
+        int tempPollution = _tickPollution;
+        for (int i = 0; i < natureCellStates.Length; i++)
+        {
+            tempPollution += natureCellStates[i].PollutionLevel;
+        }
+        totalPollution = tempPollution;
+    }
+
+    private void UpdateTotalEcoValue(int _tickEco)
+    {
+        int tempEco = _tickEco;
+        for (int i = 0; i < natureCellStates.Length; i++)
+        {
+            tempEco += natureCellStates[i].EcoLevel;
+        }
+        totalEco = tempEco;
+    }
     #endregion
 
     #region Debug Methods
@@ -148,8 +207,14 @@ public class WorldStateSystem : MonoBehaviour
 
         for (int i = 0; i < natureCellStates.Length; i++)
         {
-            debugMessage += $"Type: {natureCellStates[i].Cell} Position: {natureCellStates[i].CellPosition} Pollution: {natureCellStates[i].PollutionLevel}\n";
+            debugMessage += $"Type: {natureCellStates[i].Cell} Position: {natureCellStates[i].CellPosition} Pollution: {natureCellStates[i].PollutionLevel} Eco: {natureCellStates[i].EcoLevel}\n";
         }
+
+        debugMessage += "\n";
+        debugMessage += $"Total Pollution: {totalPollution}\n";
+        debugMessage += $"Total Eco: {totalEco}\n";
+        debugMessage += $"Total Energy: {totalEnergy}\n";
+        debugMessage += $"Total Community Health: {totalCommunityHealth}\n";
 
         Debug.Log(debugMessage);
 
