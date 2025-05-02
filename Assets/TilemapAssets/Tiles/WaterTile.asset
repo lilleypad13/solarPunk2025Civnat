@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GrassTile
+  m_Name: WaterTile
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 3625043607559282579, guid: 144b68c02276b0b44b4c8e513dc9a7f0, type: 3}
-  m_Color: {r: 0, g: 0.3773585, b: 0.05308673, a: 1}
+  m_Color: {r: 0, g: 0.22482659, b: 0.5188679, a: 1}
   m_Transform:
     e00: 1
     e01: 0

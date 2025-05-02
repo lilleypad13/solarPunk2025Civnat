@@ -11,6 +11,7 @@ public class WorldStateSystem : MonoBehaviour
     [SerializeField] private TileBase defaultTile;
     [SerializeField] private TileBase clearTile;
     [SerializeField] private TileBase blockedTile;
+    [SerializeField] private TileBase waterTile;
 
     // Data
     private List<BuildingState> buildingStates = new List<BuildingState>();
@@ -78,6 +79,11 @@ public class WorldStateSystem : MonoBehaviour
                     if (tile == defaultTile)
                     {
                         cellStatesList.Add(new NatureCellState(new GrassCell(), new Vector3Int(x, y, z)));
+                    }
+                    else if (tile == waterTile)
+                    {
+                        // Add as water tile instead.
+                        cellStatesList.Add(new NatureCellState(new WaterCell(), new Vector3Int(x, y, z)));
                     }
                 }
             }
