@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -18,9 +19,16 @@ public class WorldStateSystem : MonoBehaviour
     private int totalEco = 0;
     private int totalEnergy = 0;
     private int totalCommunityHealth = 0;
+    public int TotalPollution { get { return totalPollution; } }
+    public int TotalEco {  get { return totalEco; } }
+    public int TotalEnergy { get { return totalEnergy; } }
+    public int TotalCommunityHealth { get { return totalCommunityHealth; } }
 
     [Header("TESTING")]
     [SerializeField] private Gradient grassPollutionGradient;
+
+    // Events
+    public static event Action<WorldStateSystem> OnWorldTickCompleted;
 
     private void OnEnable()
     {
@@ -77,6 +85,8 @@ public class WorldStateSystem : MonoBehaviour
 
         natureCellStates = cellStatesList.ToArray();
 
+
+
         DebugNatureCells();
     }
 
@@ -122,6 +132,9 @@ public class WorldStateSystem : MonoBehaviour
         UpdateTotalPollutionValue(tickPollution);
         UpdateTotalEcoValue(tickEco);
         totalCommunityHealth += tickCommunityHealth;
+
+        // Event Signaling
+        OnWorldTickCompleted?.Invoke(this);
 
         // Debug
         DebugNatureCells();
