@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: d3b7d45641a46be49becbb1568523686
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5850579137205880595
+    second: nature tiles_0
+  - first:
+      213: 6381861648999656526
+    second: nature tiles_1
+  - first:
+      213: 3440764719994855662
+    second: nature tiles_2
+  - first:
+      213: 1604948678282413221
+    second: nature tiles_3
+  - first:
+      213: 8749090681443802473
+    second: nature tiles_4
+  - first:
+      213: -7803003921696337970
+    second: nature tiles_5
+  - first:
+      213: -5591487031742556569
+    second: nature tiles_6
+  - first:
+      213: 3073609543241556218
+    second: nature tiles_7
+  - first:
+      213: -5088866490183971987
+    second: nature tiles_8
+  - first:
+      213: -2767475016820499541
+    second: nature tiles_9
+  - first:
+      213: -7547182045179463238
+    second: nature tiles_10
+  - first:
+      213: -9063069454265532342
+    second: nature tiles_11
+  - first:
+      213: -3846450936842318461
+    second: nature tiles_12
+  - first:
+      213: -9135551941447597937
+    second: nature tiles_13
+  - first:
+      213: -3408233240824097827
+    second: nature tiles_14
+  - first:
+      213: -8988594203071607131
+    second: nature tiles_15
+  - first:
+      213: -8398634731192846973
+    second: nature tiles_16
+  - first:
+      213: 220368070179389038
+    second: nature tiles_17
+  - first:
+      213: -1250187699929975158
+    second: nature tiles_18
+  - first:
+      213: -4882591827980292361
+    second: nature tiles_19
+  - first:
+      213: 3845323585177394794
+    second: nature tiles_20
+  - first:
+      213: 1423070874326147446
+    second: nature tiles_21
+  - first:
+      213: -5012190337468587709
+    second: nature tiles_22
+  - first:
+      213: -6240584358302721594
+    second: nature tiles_23
+  - first:
+      213: -4237411441638719234
+    second: nature tiles_24
+  - first:
+      213: -6465932133034831017
+    second: nature tiles_25
+  - first:
+      213: 7603246636796622294
+    second: nature tiles_26
+  - first:
+      213: -782694311925482407
+    second: nature tiles_27
+  - first:
+      213: 9147849176456635041
+    second: nature tiles_28
+  - first:
+      213: -8638331902386649664
+    second: nature tiles_29
+  - first:
+      213: 1997075891401672377
+    second: nature tiles_30
+  - first:
+      213: -8955239556242066121
+    second: nature tiles_31
+  - first:
+      213: -5411283280280036456
+    second: nature tiles_32
+  - first:
+      213: 794054403703761361
+    second: nature tiles_33
+  - first:
+      213: -2488418804333342189
+    second: nature tiles_34
+  - first:
+      213: 5378706294459787336
+    second: nature tiles_35
+  - first:
+      213: 6268013464485306476
+    second: nature tiles_36
+  - first:
+      213: -986562864380969528
+    second: nature tiles_37
+  - first:
+      213: -1724217316942914505
+    second: nature tiles_38
+  - first:
+      213: -433990692164397828
+    second: nature tiles_39
+  - first:
+      213: -4089494236515511081
+    second: nature tiles_40
+  - first:
+      213: 659375551683412459
+    second: nature tiles_41
+  - first:
+      213: 4397972291455115034
+    second: nature tiles_42
+  - first:
+      213: 7642516941996286823
+    second: nature tiles_43
+  - first:
+      213: 9024490664225746535
+    second: nature tiles_44
+  - first:
+      213: 1385940943983621676
+    second: nature tiles_45
+  - first:
+      213: -9212717527013397501
+    second: nature tiles_46
+  - first:
+      213: 4768439027122949408
+    second: nature tiles_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nature tiles_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 971
+        width: 482
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317c7734abe613150800000000000000
+      internalID: 5850579137205880595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature tiles_7
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 970
+        width: 454
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0e92b4897a7aa20800000000000000
+      internalID: 3073609543241556218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature tiles_18
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 616
+        width: 498
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a867c1329e076aee0800000000000000
+      internalID: -1250187699929975158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature tiles_1
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 616
+        width: 498
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ce45a443f472a43abdf6c0150a9d05
+      internalID: 780097715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature tiles_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 567
+        width: 495
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f438fa6606031fe45b4b1ee5cb47adc4
+      internalID: -1950089802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a06f40efe929e794bb20872e58dcbbd5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nature tiles_1: 780097715
+      nature tiles_2: -1950089802
+      nature tiles_48: -1449961774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
