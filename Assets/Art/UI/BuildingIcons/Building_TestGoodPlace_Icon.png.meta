@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Building_TestGoodPlace_Icon_0: 5455051956876041546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

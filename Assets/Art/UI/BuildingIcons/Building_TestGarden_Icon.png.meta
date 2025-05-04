@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Building_TestGarden_Icon_0: 2472185900035324643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
