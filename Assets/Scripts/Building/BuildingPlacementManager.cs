@@ -14,6 +14,8 @@ public class BuildingPlacementManager : MonoBehaviour
 
     // Events
     public static event Action<BuildingData> OnBuildingPlaced;
+    public static event Action OnBegingPlacingBuilding;
+    public static event Action OnEndPlacingBuilding;
 
     private void OnEnable()
     {
@@ -63,6 +65,10 @@ public class BuildingPlacementManager : MonoBehaviour
 
     public void BeginPlacingBuilding(BuildingData buildingData)
     {
+        // Event Signaling
+        OnBegingPlacingBuilding?.Invoke();
+        GridBuildingSystem.Instance.EnableMainBuildingGrid();
+        // Logic
         currentBuildingData = buildingData;
         currentBuilding = Instantiate(buildingData.BuildingPrefab, Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity).GetComponent<Building>();
         gridBuildingSystem.OutlineBuildingArea(currentBuilding);
@@ -97,6 +103,11 @@ public class BuildingPlacementManager : MonoBehaviour
 
     public void EndPlacingBuilding()
     {
+        // Event signaling
+        OnEndPlacingBuilding?.Invoke();
+        GridBuildingSystem.Instance.DisableMainBuildingGrid();
+
+        // Logic
         currentBuildingData = null;
         currentBuilding = null;
         isPlacing = false;

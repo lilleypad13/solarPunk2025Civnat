@@ -50,49 +50,6 @@ public class GridBuildingSystem : MonoBehaviour
         TileBases.Add(TileType.Red, blockedTile);
     }
 
-    //private void Update()
-    //{
-    //    if (temp == null)
-    //    {
-    //        return;
-    //    }
-
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        if (EventSystem.current.IsPointerOverGameObject(0))
-    //        {
-    //            return;
-    //        }
-
-    //        if (!temp.IsPlaced)
-    //        {
-    //            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //            Vector3Int cellPosition = gridLayout.LocalToCell(touchPosition);
-
-    //            if(previousPosition != cellPosition)
-    //            {
-    //                temp.transform.localPosition = gridLayout.CellToLocalInterpolated(
-    //                    cellPosition)
-    //                    + placementOffset;
-    //                previousPosition = cellPosition;
-    //                OutlineBuildingArea(temp);
-    //            }
-    //        }
-    //    }
-    //    else if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        if (temp.CanBePlaced())
-    //        {
-    //            temp.Place();
-    //        }
-    //    }
-    //    else if (Input.GetKeyDown(KeyCode.Escape))
-    //    {
-    //        ClearArea();
-    //        Destroy(temp.gameObject);
-    //    }
-    //}
-
     #region Tilemap Handling
     private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
     {
@@ -123,6 +80,16 @@ public class GridBuildingSystem : MonoBehaviour
         {
             tileArray[i] = TileBases[type];
         }
+    }
+
+    public void DisableMainBuildingGrid()
+    {
+        mainTileMap.gameObject.SetActive(false);
+    }
+
+    public void EnableMainBuildingGrid()
+    {
+        mainTileMap.gameObject.SetActive(true);
     }
     #endregion
 
