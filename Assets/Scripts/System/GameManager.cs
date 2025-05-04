@@ -104,17 +104,22 @@ public class GameManager : MonoBehaviour
                 OnGenerationConcluded?.Invoke();
                 // Update index
                 generationIndex++;
-                if(generationIndex < progressionDatas.Length)
+                // Clear out building buttons.
+                buildButtonManager.Clear();
+                if (generationIndex < progressionDatas.Length)
                 {
                     // Continue to next generation
                     Debug.Log("Start next generation.");
+                    // TODO: Probably something extra eventually, but this will just jump to first set in next gen for now.
+                    // Doesn't support choices in first phase currently.
+                    // Reset phase index
+                    phaseIndex = 0;
+                    SetupBuildingSet(progressionDatas[generationIndex].PhaseSets[phaseIndex].BuildingSets[0]);
                 }
                 else
                 {
                     // END
                     Debug.Log("End game");
-                    // Clear out building buttons.
-                    buildButtonManager.Clear();
                 }
             }
             
