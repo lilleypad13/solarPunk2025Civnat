@@ -15,6 +15,8 @@ MonoBehaviour:
   countBuildingsToPlace: 999
   canDuplicatePlacements: 1
   buildings:
+  - {fileID: 11400000, guid: b87a4b5c6398eae46b95bad98208c777, type: 2}
+  - {fileID: 11400000, guid: 56c98721a63a7884d9189573725883f7, type: 2}
   - {fileID: 11400000, guid: 0eede393b8a9ceb4fae35502562f00c1, type: 2}
   - {fileID: 11400000, guid: 126cf4e7defaf5f4092ff88876b0feea, type: 2}
   - {fileID: 11400000, guid: 4781bf965e8a54d4b9ce30d2bc1933df, type: 2}
