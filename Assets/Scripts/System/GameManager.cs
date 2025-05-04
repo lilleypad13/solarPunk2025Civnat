@@ -15,15 +15,18 @@ public class GameManager : MonoBehaviour
 
     // Events
     public static event Action OnPhaseConcluded;
+    public static event Action<BuildingSetData[]> OnChoicesCrossroad;
 
     private void OnEnable()
     {
         BuildingPlacementManager.OnBuildingPlaced += CheckIfPlacedSinglePlaceBuilding;
+        SetChoice.OnSelectedSet += ProceedAfterChoiceSelected;
     }
 
     private void OnDisable()
     {
         BuildingPlacementManager.OnBuildingPlaced -= CheckIfPlacedSinglePlaceBuilding;
+        SetChoice.OnSelectedSet -= ProceedAfterChoiceSelected;
     }
 
     private void Start()
@@ -79,8 +82,16 @@ public class GameManager : MonoBehaviour
                 // Clear out building buttons.
                 buildButtonManager.Clear();
                 // Populate with next progression phase of buttons.
-                // TODO: Skipping choices inclusion for quicker itteration and testing for now.
-                SetupBuildingSet(progressionData.PhaseSets[phaseIndex].BuildingSets[0]);
+                if(progressionData.PhaseSets[phaseIndex].BuildingSets.Length > 1)
+                {
+                    // Go to choices panel
+                    OnChoicesCrossroad?.Invoke(progressionData.PhaseSets[phaseIndex].BuildingSets);
+                }
+                else
+                {
+                    // Just do forced route.
+                    SetupBuildingSet(progressionData.PhaseSets[phaseIndex].BuildingSets[0]);
+                }
             }
             else
             {
@@ -91,5 +102,10 @@ public class GameManager : MonoBehaviour
             }
             
         }
+    }
+
+    private void ProceedAfterChoiceSelected(BuildingSetData setData)
+    {
+        SetupBuildingSet(setData);
     }
 }

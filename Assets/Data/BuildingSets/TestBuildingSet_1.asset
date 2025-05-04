@@ -17,3 +17,5 @@ MonoBehaviour:
   buildings:
   - {fileID: 11400000, guid: 126cf4e7defaf5f4092ff88876b0feea, type: 2}
   - {fileID: 11400000, guid: 4781bf965e8a54d4b9ce30d2bc1933df, type: 2}
+  choiceUIIcon: {fileID: 5455051956876041546, guid: a458bc3f98f0b66488b9bf5251d42a7f, type: 3}
+  choiceText: Choice 1
