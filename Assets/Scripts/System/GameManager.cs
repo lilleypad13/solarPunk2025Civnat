@@ -5,13 +5,14 @@ public class GameManager : MonoBehaviour
 {
     [Header("Data")]
     [SerializeField] private BuildingSetData baseBuildingSet;
-    [SerializeField] private GameProgressionData progressionData;
+    [SerializeField] private GameProgressionData[] progressionDatas;
 
     [Header("UI")]
     [SerializeField] private BuildButtonManager buildButtonManager;
 
     private BuildingSetState activeSet;
     private int phaseIndex = 0;
+    private int generationIndex = 0;
 
     // Events
     public static event Action OnPhaseConcluded;
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // TODO: Just setup for testing right now.
-        SetupBuildingSet(progressionData.PhaseSets[0].BuildingSets[0]);
+        SetupBuildingSet(progressionDatas[0].PhaseSets[0].BuildingSets[0]);
     }
 
     public void SetupBuildingSet(BuildingSetData set)
@@ -76,7 +77,7 @@ public class GameManager : MonoBehaviour
             // Increment phase
             phaseIndex++;
             
-            if (phaseIndex < progressionData.PhaseSets.Length)
+            if (phaseIndex < progressionDatas[generationIndex].PhaseSets.Length)
             {
                 // End Phase Event / World Tick
                 OnPhaseConcluded?.Invoke();
@@ -84,25 +85,37 @@ public class GameManager : MonoBehaviour
                 // Clear out building buttons.
                 buildButtonManager.Clear();
                 // Populate with next progression phase of buttons.
-                if(progressionData.PhaseSets[phaseIndex].BuildingSets.Length > 1)
+                if(progressionDatas[generationIndex].PhaseSets[phaseIndex].BuildingSets.Length > 1)
                 {
                     // Go to choices panel
-                    OnChoicesCrossroad?.Invoke(progressionData.PhaseSets[phaseIndex].BuildingSets);
+                    OnChoicesCrossroad?.Invoke(progressionDatas[generationIndex].PhaseSets[phaseIndex].BuildingSets);
                 }
                 else
                 {
                     // Just do forced route.
-                    SetupBuildingSet(progressionData.PhaseSets[phaseIndex].BuildingSets[0]);
+                    SetupBuildingSet(progressionDatas[generationIndex].PhaseSets[phaseIndex].BuildingSets[0]);
                 }
             }
             else
             {
-                // End
-                Debug.Log("End of Progression Phases.");
+                // Completed generation
+                Debug.Log("End of Progression Phase.");
                 // End Phase Event / Generation Tick
                 OnGenerationConcluded?.Invoke();
-                // Clear out building buttons.
-                buildButtonManager.Clear();
+                // Update index
+                generationIndex++;
+                if(generationIndex < progressionDatas.Length)
+                {
+                    // Continue to next generation
+                    Debug.Log("Start next generation.");
+                }
+                else
+                {
+                    // END
+                    Debug.Log("End game");
+                    // Clear out building buttons.
+                    buildButtonManager.Clear();
+                }
             }
             
         }
