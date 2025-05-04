@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     // Events
     public static event Action OnPhaseConcluded;
+    public static event Action OnGenerationConcluded;
     public static event Action<BuildingSetData[]> OnChoicesCrossroad;
 
     private void OnEnable()
@@ -74,10 +75,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("Advance");
             // Increment phase
             phaseIndex++;
-            // End Phase Event / World Tick
-            OnPhaseConcluded?.Invoke();
+            
             if (phaseIndex < progressionData.PhaseSets.Length)
             {
+                // End Phase Event / World Tick
+                OnPhaseConcluded?.Invoke();
                 // Continue
                 // Clear out building buttons.
                 buildButtonManager.Clear();
@@ -97,6 +99,8 @@ public class GameManager : MonoBehaviour
             {
                 // End
                 Debug.Log("End of Progression Phases.");
+                // End Phase Event / Generation Tick
+                OnGenerationConcluded?.Invoke();
                 // Clear out building buttons.
                 buildButtonManager.Clear();
             }
