@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69344ca0423f1a54eb8d49d14714d872, type: 3}
-  m_Name: Home
+  m_Name: Park
   m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 7660727817868493310, guid: 287d963c700268b4ba10de541bf2ea1b, type: 3}
-  uiSprite: {fileID: -1852511725, guid: aac56aa537811024587f4c92925ee6cf, type: 3}
+  buildingPrefab: {fileID: 7660727817868493310, guid: 5a640de4d7d82e34ab98f01540833459, type: 3}
+  uiSprite: {fileID: -1925683916, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}

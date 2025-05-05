@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7660727817868493310}
   - component: {fileID: 4999959587152413288}
   m_Layer: 0
-  m_Name: Garden
+  m_Name: Grocery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   function: {fileID: 4999959587152413288}
   area:
     m_Position: {x: 0, y: 1, z: 1}
-    m_Size: {x: 1, y: 1, z: 1}
+    m_Size: {x: 2, y: 2, z: 1}
 --- !u!114 &4999959587152413288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,13 +150,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pollutionArea:
-    m_Position: {x: 4, y: 4, z: 0}
+    m_Position: {x: 2, y: 2, z: 0}
     m_Size: {x: 0, y: 0, z: 1}
   pollutionAreaOffset: {x: -1, y: -1, z: 0}
   pollutionAreaValue: 0
-  inherentPollutionValue: -6
-  ecoAreaValue: 5
-  inherentEcoValue: 4
-  inherentEnergyValue: 0
-  inherentCommunityHealthValue: 10
-  pollutedInherentCommunityHealthValue: 5
+  inherentPollutionValue: 10
+  ecoAreaValue: 0
+  inherentEcoValue: 0
+  inherentEnergyValue: 8
+  inherentCommunityHealthValue: 8
+  pollutedInherentCommunityHealthValue: 3
