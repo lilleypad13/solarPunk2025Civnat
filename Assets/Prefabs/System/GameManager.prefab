@@ -59,5 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseBuildingSet: {fileID: 11400000, guid: 1abf8dc7f87610f45a344e45707753f9, type: 2}
-  progressionData: {fileID: 11400000, guid: eed73841f4c88964ca3c6bf64695cb7a, type: 2}
+  progressionDatas:
+  - {fileID: 11400000, guid: eed73841f4c88964ca3c6bf64695cb7a, type: 2}
+  - {fileID: 11400000, guid: eed73841f4c88964ca3c6bf64695cb7a, type: 2}
   buildButtonManager: {fileID: 0}

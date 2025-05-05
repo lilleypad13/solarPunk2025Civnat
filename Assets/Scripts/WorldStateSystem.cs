@@ -13,6 +13,9 @@ public class WorldStateSystem : MonoBehaviour
     [SerializeField] private TileBase blockedTile;
     [SerializeField] private TileBase waterTile;
 
+    [Header("Parameters")]
+    [SerializeField] private int countWorldTicksPerGeneration = 5;
+
     // Data
     private List<BuildingState> buildingStates = new List<BuildingState>();
     private NatureCellState[] natureCellStates;
@@ -35,12 +38,14 @@ public class WorldStateSystem : MonoBehaviour
     {
         Building.OnPlaced += AddBuilding;
         GameManager.OnPhaseConcluded += WorldTick;
+        GameManager.OnGenerationConcluded += GenerationTick;
     }
 
     private void OnDisable()
     {
         Building.OnPlaced -= AddBuilding;
         GameManager.OnPhaseConcluded -= WorldTick;
+        GameManager.OnGenerationConcluded -= GenerationTick;
     }
 
     private void Start()
@@ -98,6 +103,7 @@ public class WorldStateSystem : MonoBehaviour
 
     private void WorldTick()
     {
+        Debug.Log("Begin world tick.");
         // Handle Inherent Values
         int tickPollution = 0;
         int tickEnergy = 0;
@@ -146,6 +152,14 @@ public class WorldStateSystem : MonoBehaviour
         DebugNatureCells();
     }
 
+    private void GenerationTick()
+    {
+        Debug.Log("Begin generation tick.");
+        for (int i = 0; i < countWorldTicksPerGeneration; i++)
+        {
+            WorldTick();
+        }
+    }
 
     #region Data Methods
     private void AddBuilding(Building building, Vector3Int position)

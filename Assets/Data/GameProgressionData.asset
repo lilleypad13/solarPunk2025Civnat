@@ -21,3 +21,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 526954037381ad14ebbbb0c3b4679142, type: 2}
   - buildingSets:
     - {fileID: 11400000, guid: a38f483a2abfd8b419297b13f745f034, type: 2}
+  - buildingSets:
+    - {fileID: 11400000, guid: 1abf8dc7f87610f45a344e45707753f9, type: 2}
+    - {fileID: 11400000, guid: a38f483a2abfd8b419297b13f745f034, type: 2}
+    - {fileID: 11400000, guid: 526954037381ad14ebbbb0c3b4679142, type: 2}
