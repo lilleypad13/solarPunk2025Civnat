@@ -158,5 +158,5 @@ MonoBehaviour:
   ecoAreaValue: 0
   inherentEcoValue: 0
   inherentEnergyValue: 0
-  inherentCommunityHealthValue: 2
-  pollutedInherentCommunityHealthValue: 1
+  inherentCommunityHealthValue: 4
+  pollutedInherentCommunityHealthValue: 2
