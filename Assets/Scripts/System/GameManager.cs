@@ -3,22 +3,47 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     [Header("Data")]
     [SerializeField] private BuildingSetData baseBuildingSet;
+    public BuildingSetData BaseBuildingSet { get => baseBuildingSet; }
     [SerializeField] private GameProgressionData[] progressionDatas;
+    public GameProgressionData[] ProgressionDatas { get => progressionDatas; }
     [SerializeField] private GoalData goalData;
+    public GoalData GoalData { get => goalData; }
 
     [Header("UI")]
     [SerializeField] private BuildButtonManager buildButtonManager;
 
     private BuildingSetState activeSet;
+    public BuildingSetState ActiveSet { get => activeSet; }
     private int phaseIndex = 0;
+    public int PhaseIndex { get => phaseIndex; }
     private int generationIndex = 0;
+    public int GenerationIndex { get => generationIndex; }
+    private GameProgressionData currentGeneration
+    {
+        get
+        { 
+            if(generationIndex < progressionDatas.Length)
+            {
+                return progressionDatas[generationIndex];
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+    public GameProgressionData CurrentGeneration { get => currentGeneration; }
 
     // Events
     public static event Action OnPhaseConcluded;
     public static event Action OnGenerationConcluded;
     public static event Action<BuildingSetData[]> OnChoicesCrossroad;
+    public static event Action OnGameStateUpdate;
+    public static event Action OnGameStartSetupComplete;
 
     private void OnEnable()
     {
@@ -32,10 +57,23 @@ public class GameManager : MonoBehaviour
         SetChoice.OnSelectedSet -= ProceedAfterChoiceSelected;
     }
 
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            Destroy(Instance);
+        }
+
+        Instance = this;
+    }
+
     private void Start()
     {
         // TODO: Just setup for testing right now.
         SetupBuildingSet(progressionDatas[0].PhaseSets[0].BuildingSets[0]);
+
+        // Event Signaling
+        OnGameStartSetupComplete?.Invoke();
     }
 
     public void SetupBuildingSet(BuildingSetData set)
@@ -125,6 +163,8 @@ public class GameManager : MonoBehaviour
             }
             
         }
+
+        OnGameStateUpdate?.Invoke();
     }
 
     private void ProceedAfterChoiceSelected(BuildingSetData setData)

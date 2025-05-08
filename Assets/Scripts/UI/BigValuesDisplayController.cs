@@ -18,6 +18,19 @@ public class BigValuesDisplayController : MonoBehaviour
         WorldStateSystem.OnWorldTickCompleted -= UpdateDisplay;
     }
 
+    private void Start()
+    {
+        UpdateDisplay();
+    }
+
+    private void UpdateDisplay()
+    {
+        pollutionText.text = $"Pollution: 0";
+        ecoText.text = $"Eco: 0";
+        energyText.text = $"Energy: 0";
+        communityText.text = $"Community: 0";
+    }
+
     private void UpdateDisplay(WorldStateSystem worldStateSystem)
     {
         pollutionText.text = $"Pollution: {worldStateSystem.TotalPollution}";
