@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed5d4ca698f9424dad373940686cd00, type: 3}
   m_Name: GoalData
   m_EditorClassIdentifier: 
-  goalPollution: 100
-  goalEco: 100
-  goalEnergy: 100
-  goalCommunityHealth: 1000
+  goalPollution: 8000
+  goalEco: 6000
+  goalEnergy: 1000
+  goalCommunityHealth: 2500
