@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     [Header("Data")]
     [SerializeField] private BuildingSetData baseBuildingSet;
     [SerializeField] private GameProgressionData[] progressionDatas;
+    [SerializeField] private GoalData goalData;
 
     [Header("UI")]
     [SerializeField] private BuildButtonManager buildButtonManager;

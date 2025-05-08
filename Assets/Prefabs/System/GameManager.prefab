@@ -62,4 +62,5 @@ MonoBehaviour:
   progressionDatas:
   - {fileID: 11400000, guid: eed73841f4c88964ca3c6bf64695cb7a, type: 2}
   - {fileID: 11400000, guid: eed73841f4c88964ca3c6bf64695cb7a, type: 2}
+  goalData: {fileID: 11400000, guid: 8ddd4eaa1777a2048a95bb8025a8963c, type: 2}
   buildButtonManager: {fileID: 0}
