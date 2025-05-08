@@ -16,5 +16,7 @@ MonoBehaviour:
   canDuplicatePlacements: 1
   buildings:
   - {fileID: 11400000, guid: acf2e30d9ac39184e961378012cf602f, type: 2}
+  - {fileID: 11400000, guid: b209219a5e3438343a8aa7960aacf662, type: 2}
+  - {fileID: 11400000, guid: 67ac0e1fbe837f34e9263c95ac083bfb, type: 2}
   choiceUIIcon: {fileID: 3625043607559282579, guid: 144b68c02276b0b44b4c8e513dc9a7f0, type: 3}
   choiceText: 

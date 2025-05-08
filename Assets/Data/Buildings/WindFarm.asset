@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69344ca0423f1a54eb8d49d14714d872, type: 3}
+  m_Name: WindFarm
+  m_EditorClassIdentifier: 
+  buildingPrefab: {fileID: 7660727817868493310, guid: a860bef6b5b6f0c43ace9027a8049310, type: 3}
+  uiSprite: {fileID: 0}

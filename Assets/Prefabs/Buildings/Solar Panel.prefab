@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 1264890851155004327}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.05, z: 0}
-  m_LocalScale: {x: 0.18400577, y: 0.15870498, z: 0.09200288}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1924671499615522761}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9d79430707904f749aa88eb7e646257d, type: 3}
+  m_Sprite: {fileID: 3625043607559282579, guid: 0e526647180b10742bafa2321773d303, type: 3}
   m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7660727817868493310}
   - component: {fileID: 4999959587152413288}
   m_Layer: 0
-  m_Name: Home
+  m_Name: Solar Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,12 +151,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollutionArea:
     m_Position: {x: 0, y: 0, z: 0}
-    m_Size: {x: 2, y: 2, z: 1}
+    m_Size: {x: 5, y: 5, z: 1}
   pollutionAreaOffset: {x: -1, y: -1, z: 0}
-  pollutionAreaValue: 1
+  pollutionAreaValue: 0
   inherentPollutionValue: 0
-  ecoAreaValue: 0
-  inherentEcoValue: 0
-  inherentEnergyValue: 0
-  inherentCommunityHealthValue: 4
-  pollutedInherentCommunityHealthValue: 2
+  ecoAreaValue: 15
+  inherentEcoValue: 30
+  inherentEnergyValue: 45
+  inherentCommunityHealthValue: 0
+  pollutedInherentCommunityHealthValue: 0
