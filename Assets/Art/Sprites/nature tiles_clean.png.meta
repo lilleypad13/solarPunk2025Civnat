@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: e3119eb1122726e4fbb4a66122d0c807
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1274731972878847408
+    second: nature tiles_clean_0
+  - first:
+      213: 2157984685338763357
+    second: nature tiles_clean_1
+  - first:
+      213: 2780720073539907111
+    second: nature tiles_clean_2
+  - first:
+      213: 8728414268664657463
+    second: nature tiles_clean_3
+  - first:
+      213: 1177566371907037073
+    second: nature tiles_clean_4
+  - first:
+      213: -1309599244094620967
+    second: nature tiles_clean_5
+  - first:
+      213: 9117555207789811299
+    second: nature tiles_clean_6
+  - first:
+      213: 6867920905858376183
+    second: nature tiles_clean_7
+  - first:
+      213: 3255552180952617150
+    second: nature tiles_clean_8
+  - first:
+      213: 8188603623862269373
+    second: nature tiles_clean_9
+  - first:
+      213: 8448651985955594816
+    second: nature tiles_clean_10
+  - first:
+      213: -7576773941545534821
+    second: nature tiles_clean_11
+  - first:
+      213: -1930600738484352857
+    second: nature tiles_clean_12
+  - first:
+      213: -8020856442574542194
+    second: nature tiles_clean_13
+  - first:
+      213: -9019488030445577601
+    second: nature tiles_clean_14
+  - first:
+      213: 1334194106019068858
+    second: nature tiles_clean_15
+  - first:
+      213: -4958658965183013255
+    second: nature tiles_clean_16
+  - first:
+      213: 7766913876272237248
+    second: nature tiles_clean_17
+  - first:
+      213: -3592863568467907990
+    second: nature tiles_clean_18
+  - first:
+      213: 3497181201081709530
+    second: nature tiles_clean_19
+  - first:
+      213: -470829239532302271
+    second: nature tiles_clean_20
+  - first:
+      213: -2353080324238953611
+    second: nature tiles_clean_21
+  - first:
+      213: 6079499394858554993
+    second: nature tiles_clean_22
+  - first:
+      213: -2373042750535358865
+    second: nature tiles_clean_23
+  - first:
+      213: -5565801330529467400
+    second: nature tiles_clean_24
+  - first:
+      213: -387214154817507466
+    second: nature tiles_clean_25
+  - first:
+      213: 4308657951120690812
+    second: nature tiles_clean_26
+  - first:
+      213: 969883974731786719
+    second: nature tiles_clean_27
+  - first:
+      213: 1166458103503602076
+    second: nature tiles_clean_28
+  - first:
+      213: 339820107138295036
+    second: nature tiles_clean_29
+  - first:
+      213: 7128000587043168281
+    second: nature tiles_clean_30
+  - first:
+      213: -3864927082957801415
+    second: nature tiles_clean_31
+  - first:
+      213: -5627916979762199049
+    second: nature tiles_clean_32
+  - first:
+      213: -212439099933671193
+    second: nature tiles_clean_33
+  - first:
+      213: -1363865835668842717
+    second: nature tiles_clean_34
+  - first:
+      213: 1600301478228590310
+    second: nature tiles_clean_35
+  - first:
+      213: -2631353451463546881
+    second: nature tiles_clean_36
+  - first:
+      213: 1088805235619135901
+    second: nature tiles_clean_37
+  - first:
+      213: -50025956762159948
+    second: nature tiles_clean_38
+  - first:
+      213: -6684560761673149861
+    second: nature tiles_clean_39
+  - first:
+      213: 7851700454604326720
+    second: nature tiles_clean_40
+  - first:
+      213: -7339949293964290753
+    second: nature tiles_clean_41
+  - first:
+      213: 608780451744269876
+    second: nature tiles_clean_42
+  - first:
+      213: 8992677175913124190
+    second: nature tiles_clean_43
+  - first:
+      213: -1243639505927974748
+    second: nature tiles_clean_44
+  - first:
+      213: -2657255359658170046
+    second: nature tiles_clean_45
+  - first:
+      213: 2615896466008537153
+    second: nature tiles_clean_46
+  - first:
+      213: 3498206715055175566
+    second: nature tiles_clean_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crop
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 640
+        height: 356
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7ae4d99596266448d95ac3e74a885d
+      internalID: 1415523655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 356
+        width: 640
+        height: 356
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed76ad3a68b823498949a735408799b
+      internalID: 765196361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: field
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 356
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d891a8e8c65a449a86deb208a7d0ee
+      internalID: 851544049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 356
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e8b69d7efa0054cb88921766b01af7
+      internalID: -723534661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 703a6afa8695d524bad5088533f995e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      crop: 1415523655
+      field: 851544049
+      grass: 765196361
+      water: -723534661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
