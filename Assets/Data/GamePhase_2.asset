@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73364472d3d6f2d44b974d3b983907e2, type: 3}
+  m_Name: GamePhase_2
+  m_EditorClassIdentifier: 
+  phaseSets:
+  - buildingSets:
+    - {fileID: 11400000, guid: 7214ac451827adc43abb54c83e23f56b, type: 2}
+  - buildingSets:
+    - {fileID: 11400000, guid: e37242da6aa01814f8335049402528c8, type: 2}
+    - {fileID: 11400000, guid: 33cc2b559b9e8464090ccad9f27f1a77, type: 2}
+    - {fileID: 11400000, guid: f0fabc15375fa264d810c44d572aed00, type: 2}
+  - buildingSets:
+    - {fileID: 11400000, guid: 7214ac451827adc43abb54c83e23f56b, type: 2}

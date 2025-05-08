@@ -15,4 +15,4 @@ MonoBehaviour:
   goalPollution: 100
   goalEco: 100
   goalEnergy: 100
-  goalCommunityHealth: 100
+  goalCommunityHealth: 1000

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d61ec77b660624a96162362f4f9b58, type: 3}
+  m_Name: 3Sandbox Phase
+  m_EditorClassIdentifier: 
+  countBuildingsToPlace: 3
+  canDuplicatePlacements: 1
+  buildings:
+  - {fileID: 11400000, guid: b87a4b5c6398eae46b95bad98208c777, type: 2}
+  - {fileID: 11400000, guid: 56c98721a63a7884d9189573725883f7, type: 2}
+  - {fileID: 11400000, guid: acf2e30d9ac39184e961378012cf602f, type: 2}
+  - {fileID: 11400000, guid: 47fa36b8496706c42a171273415a74c7, type: 2}
+  - {fileID: 11400000, guid: 769e0ab99c8a1234eafb04c268bf0b54, type: 2}
+  - {fileID: 11400000, guid: 3fb001d4d6fb0954684072ea23415a68, type: 2}
+  - {fileID: 11400000, guid: e99bb2dd003805149bc9ebff6c42a9bc, type: 2}
+  - {fileID: 11400000, guid: af0b8e4239b13584289f548fe8b1d008, type: 2}
+  - {fileID: 11400000, guid: e2139c01c0ef7b5449ecd8d2767999ba, type: 2}
+  - {fileID: 11400000, guid: 40e9a3a8330ab41478969503a9ed175a, type: 2}
+  choiceUIIcon: {fileID: 0}
+  choiceText: 

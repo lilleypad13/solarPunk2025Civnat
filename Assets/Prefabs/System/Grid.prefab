@@ -231,7 +231,7 @@ MonoBehaviour:
   defaultTile: {fileID: 11400000, guid: 5a7976e90c5d2bb43a0c8c7c23ebb3f7, type: 2}
   clearTile: {fileID: 11400000, guid: c07ea5a1818e28a4c9dd16285740166b, type: 2}
   blockedTile: {fileID: 11400000, guid: 106936189f6ffb348a01e3b8c04d01fb, type: 2}
-  waterTile: {fileID: 0}
+  waterTile: {fileID: 11400000, guid: a4b47d1ab6513e345a84bf31c52cc47c, type: 2}
   countWorldTicksPerGeneration: 5
   grassPollutionGradient:
     serializedVersion: 2
@@ -1048,8 +1048,8 @@ Tilemap:
   - first: {x: 4, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 1
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1058,8 +1058,8 @@ Tilemap:
   - first: {x: 5, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 1
+      m_TileIndex: 1
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1877,14 +1877,14 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 134
+  - m_RefCount: 132
     m_Data: {fileID: 11400000, guid: 9f55c5ebafb109c439d09f2283abd99f, type: 2}
-  - m_RefCount: 23
+  - m_RefCount: 25
     m_Data: {fileID: 11400000, guid: a4b47d1ab6513e345a84bf31c52cc47c, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 23
+  - m_RefCount: 25
     m_Data: {fileID: -8576517301991376552, guid: 12f638c0bbae7a4438090c8a9475b79c, type: 3}
-  - m_RefCount: 134
+  - m_RefCount: 132
     m_Data: {fileID: 7423650494972133075, guid: 5823b0fff9471c748929c25c14ef1e15, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 157
@@ -1912,7 +1912,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -5, y: -8, z: 0}
-  m_Size: {x: 16, y: 16, z: 1}
+  m_Size: {x: 17, y: 16, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2001,7 +2001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7632195425282268619
 Transform:
   m_ObjectHideFlags: 0

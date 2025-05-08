@@ -156,7 +156,7 @@ MonoBehaviour:
   pollutionAreaValue: 6
   inherentPollutionValue: 8
   ecoAreaValue: 0
-  inherentEcoValue: 0
-  inherentEnergyValue: 10
+  inherentEcoValue: -10
+  inherentEnergyValue: 25
   inherentCommunityHealthValue: 0
   pollutedInherentCommunityHealthValue: 0
