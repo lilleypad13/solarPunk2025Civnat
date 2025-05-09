@@ -7,4 +7,6 @@ public class BuildingData : ScriptableObject
     public Building BuildingPrefab { get => buildingPrefab; }
     [SerializeField] private Sprite uiSprite;
     public Sprite UiSprite { get => uiSprite; }
+    [SerializeField] private string buildingName;
+    public string BuildingName {  get => buildingName; }
 }
