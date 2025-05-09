@@ -33,12 +33,14 @@ public class WorldStateSystem : MonoBehaviour
 
     // Events
     public static event Action<WorldStateSystem> OnWorldTickCompleted;
+    public static event Action<WorldStateSystem> OnEndWorldState;
 
     private void OnEnable()
     {
         Building.OnPlaced += AddBuilding;
         GameManager.OnPhaseConcluded += WorldTick;
         GameManager.OnGenerationConcluded += GenerationTick;
+        GameManager.OnGameEnd += SignalEndGameState;
     }
 
     private void OnDisable()
@@ -46,6 +48,7 @@ public class WorldStateSystem : MonoBehaviour
         Building.OnPlaced -= AddBuilding;
         GameManager.OnPhaseConcluded -= WorldTick;
         GameManager.OnGenerationConcluded -= GenerationTick;
+        GameManager.OnGameEnd -= SignalEndGameState;
     }
 
     private void Start()
@@ -65,9 +68,9 @@ public class WorldStateSystem : MonoBehaviour
             WorldTick();
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.V))
         {
-            DebugNatureCells();
+            OnEndWorldState?.Invoke(this);
         }
     }
 
@@ -229,6 +232,13 @@ public class WorldStateSystem : MonoBehaviour
             tempEco += natureCellStates[i].EcoLevel;
         }
         totalEco = tempEco;
+    }
+    #endregion
+
+    #region Event Based
+    private void SignalEndGameState()
+    {
+        OnEndWorldState?.Invoke(this);
     }
     #endregion
 

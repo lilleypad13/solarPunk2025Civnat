@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public static event Action<BuildingSetData[]> OnChoicesCrossroad;
     public static event Action OnGameStateUpdate;
     public static event Action OnGameStartSetupComplete;
+    public static event Action OnGameEnd;
 
     private void OnEnable()
     {
@@ -159,6 +160,9 @@ public class GameManager : MonoBehaviour
                 {
                     // END
                     Debug.Log("End game");
+
+                    // Event signal
+                    OnGameEnd?.Invoke();
                 }
             }
             
