@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Playground
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: d4c98d3a3985b544fad5885594cf9dc8, type: 3}
-  uiSprite: {fileID: 251922239, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  uiSprite: {fileID: 6208176927266180224, guid: 0adbdd4e2a3d5364389f522695b22a11, type: 3}
+  buildingName: Playground

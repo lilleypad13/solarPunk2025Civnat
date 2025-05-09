@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Apartment
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 3d1c75cb06df02142b4f380295b92bbb, type: 3}
-  uiSprite: {fileID: 1179330034, guid: aac56aa537811024587f4c92925ee6cf, type: 3}
+  uiSprite: {fileID: -5852267500452843241, guid: 1efc1a6d4f01db94fb6106b0400b72b8, type: 3}
+  buildingName: Apartment

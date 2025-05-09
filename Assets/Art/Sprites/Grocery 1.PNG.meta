@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 1265a60f4aeea324f97a77d8250e0888
+guid: 42fad8b6cdb53e84b8d493ef31cba2e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3577485275521527324
-    second: Solar_0
+      213: 1102456666446928363
+    second: Grocery 1_0
   - first:
-      213: 7202768289651060878
-    second: Solar_1
+      213: -7859729275214455786
+    second: Grocery 1_1
   - first:
-      213: 5061605436741085174
-    second: Solar_2
-  - first:
-      213: 1594322657470347251
-    second: Solar_3
+      213: 5925218942717171836
+    second: Grocery 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,78 +106,56 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Solar_0
+      name: Grocery 1_0
       rect:
         serializedVersion: 2
-        x: 516
-        y: 166
-        width: 1193
-        height: 723
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1ea6ac57e7c5a130800000000000000
-      internalID: 3577485275521527324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Solar_1
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 171
-        width: 40
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e807918f89f55f360800000000000000
-      internalID: 7202768289651060878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Solar_2
-      rect:
-        serializedVersion: 2
-        x: 1087
-        y: 168
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f76322c35f6e3640800000000000000
-      internalID: 5061605436741085174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Solar_3
-      rect:
-        serializedVersion: 2
-        x: 1128
+        x: 478
         y: 176
-        width: 7
+        width: 1378
+        height: 1375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be994df3f76bc4f00800000000000000
+      internalID: 1102456666446928363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grocery 1_1
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 179
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c9a18edd1ace290800000000000000
+      internalID: -7859729275214455786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grocery 1_2
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 182
+        width: 9
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f770e7820c202610800000000000000
-      internalID: 1594322657470347251
+      spriteID: c7892193c3b9a3250800000000000000
+      internalID: 5925218942717171836
       vertices: []
       indices: 
       edges: []
@@ -210,10 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Solar_0: 3577485275521527324
-      Solar_1: 7202768289651060878
-      Solar_2: 5061605436741085174
-      Solar_3: 1594322657470347251
+      Grocery 1_0: 1102456666446928363
+      Grocery 1_1: -7859729275214455786
+      Grocery 1_2: 5925218942717171836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Grocery
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: a5c7c38b9d8db7a46a9d61da71879282, type: 3}
-  uiSprite: {fileID: -963976987, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  uiSprite: {fileID: 9005654152079762767, guid: 26827d56fa741ec4380670b84f908bf1, type: 3}
+  buildingName: Grocery Store

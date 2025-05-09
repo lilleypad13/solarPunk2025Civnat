@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: 211ae88b5f7b6534ea76db4f50fd0d3c
+guid: a88ef9fa65756c14e82a0a64245177a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5747121643168140822
-    second: OilRig_0
+      213: 5414829853228862429
+    second: Wind (1)_0
   - first:
-      213: -2099092624087811190
-    second: OilRig_1
+      213: 4651272118615106611
+    second: Wind (1)_1
   - first:
-      213: -2735777495262727874
-    second: OilRig_2
+      213: -548823946303011091
+    second: Wind (1)_2
   - first:
-      213: 4437433718410098162
-    second: OilRig_3
+      213: 1283881964497222944
+    second: Wind (1)_3
   - first:
-      213: 3415175010648095421
-    second: OilRig_4
+      213: -7813559609371991517
+    second: Wind (1)_4
   - first:
-      213: 7095181956843526034
-    second: OilRig_5
+      213: -1390111514135480321
+    second: Wind (1)_5
+  - first:
+      213: 5468937739606140037
+    second: Wind (1)_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OilRig_0
+      name: Wind (1)_0
       rect:
         serializedVersion: 2
-        x: 712
-        y: 456
-        width: 197
-        height: 548
+        x: 1155
+        y: 928
+        width: 12
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae1f00aa05f1e30b0800000000000000
-      internalID: -5747121643168140822
+      spriteID: ddb03e00017552b40800000000000000
+      internalID: 5414829853228862429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OilRig_1
+      name: Wind (1)_1
       rect:
         serializedVersion: 2
-        x: 763
-        y: 262
-        width: 646
-        height: 764
+        x: 1159
+        y: 924
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8b7a9e31668ed2e0800000000000000
-      internalID: -2099092624087811190
+      spriteID: 3346bbf2953ac8040800000000000000
+      internalID: 4651272118615106611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OilRig_2
+      name: Wind (1)_2
       rect:
         serializedVersion: 2
-        x: 990
-        y: 663
-        width: 80
-        height: 377
+        x: 1166
+        y: 903
+        width: 47
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e317b52ecd0980ad0800000000000000
-      internalID: -2735777495262727874
+      spriteID: de68164578f2268f0800000000000000
+      internalID: -548823946303011091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OilRig_3
+      name: Wind (1)_3
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 730
-        width: 82
-        height: 374
+        x: 1225
+        y: 910
+        width: 34
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f5bc24d47ee49d30800000000000000
-      internalID: 4437433718410098162
+      spriteID: 02d336b28d341d110800000000000000
+      internalID: 1283881964497222944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OilRig_4
+      name: Wind (1)_4
       rect:
         serializedVersion: 2
-        x: 1344
-        y: 387
-        width: 231
-        height: 250
+        x: 516
+        y: 149
+        width: 1210
+        height: 770
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dba787be393256f20800000000000000
-      internalID: 3415175010648095421
+      spriteID: 322ea0ceee8a09390800000000000000
+      internalID: -7813559609371991517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OilRig_5
+      name: Wind (1)_5
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 90
-        width: 8
-        height: 8
+        x: 1162
+        y: 905
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +243,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2975b6ad566277260800000000000000
-      internalID: 7095181956843526034
+      spriteID: ff736c961f455bce0800000000000000
+      internalID: -1390111514135480321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 907
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584a3f306e195eb40800000000000000
+      internalID: 5468937739606140037
       vertices: []
       indices: 
       edges: []
@@ -260,12 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OilRig_0: -5747121643168140822
-      OilRig_1: -2099092624087811190
-      OilRig_2: -2735777495262727874
-      OilRig_3: 4437433718410098162
-      OilRig_4: 3415175010648095421
-      OilRig_5: 7095181956843526034
+      Wind (1)_0: 5414829853228862429
+      Wind (1)_1: 4651272118615106611
+      Wind (1)_2: -548823946303011091
+      Wind (1)_3: 1283881964497222944
+      Wind (1)_4: -7813559609371991517
+      Wind (1)_5: -1390111514135480321
+      Wind (1)_6: 5468937739606140037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

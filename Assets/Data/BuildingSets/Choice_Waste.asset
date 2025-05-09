@@ -17,5 +17,5 @@ MonoBehaviour:
   buildings:
   - {fileID: 11400000, guid: e99bb2dd003805149bc9ebff6c42a9bc, type: 2}
   - {fileID: 11400000, guid: 47fa36b8496706c42a171273415a74c7, type: 2}
-  choiceUIIcon: {fileID: 1859625066, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  choiceUIIcon: {fileID: 5520406542960741612, guid: e24a003d547c34a47bc3c68e011ed7ec, type: 3}
   choiceText: what do we do with our waste?

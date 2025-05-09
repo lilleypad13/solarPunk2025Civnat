@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Home
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 287d963c700268b4ba10de541bf2ea1b, type: 3}
-  uiSprite: {fileID: -1852511725, guid: aac56aa537811024587f4c92925ee6cf, type: 3}
+  uiSprite: {fileID: -7411974349392773033, guid: 4daa3867886a2614388dd91b1cd37ebd, type: 3}
+  buildingName: House

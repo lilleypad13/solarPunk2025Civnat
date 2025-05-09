@@ -17,5 +17,5 @@ MonoBehaviour:
   buildings:
   - {fileID: 11400000, guid: af0b8e4239b13584289f548fe8b1d008, type: 2}
   - {fileID: 11400000, guid: e2139c01c0ef7b5449ecd8d2767999ba, type: 2}
-  choiceUIIcon: {fileID: 251922239, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  choiceUIIcon: {fileID: 6208176927266180224, guid: 0adbdd4e2a3d5364389f522695b22a11, type: 3}
   choiceText: where is our 3rd place?

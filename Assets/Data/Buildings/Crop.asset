@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Crop
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: e54870ee843343a46a4135eae7f2bd15, type: 3}
-  uiSprite: {fileID: 2472185900035324643, guid: d23a330bbc6638447a8e6951073ebca1, type: 3}
+  uiSprite: {fileID: 1998735772204047069, guid: 4f87851c3a281514dbef8671a4c6b73b, type: 3}
+  buildingName: Crop Field

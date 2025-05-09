@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SolarPanel
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: d669d9b78244c7342bbfb596f7d12967, type: 3}
-  uiSprite: {fileID: -4290411049907887346, guid: a507269b4ae04e44880b2c8091d08f87, type: 3}
+  uiSprite: {fileID: -2994622485830726169, guid: fdb2c28ddbc63c747b8e4b554cc92cb2, type: 3}
+  buildingName: Solar Panel Farm

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Compost
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 21072aa62ab07ac47889044c7b84c6d5, type: 3}
-  uiSprite: {fileID: -1841942874, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  uiSprite: {fileID: 5520406542960741612, guid: e24a003d547c34a47bc3c68e011ed7ec, type: 3}
+  buildingName: Compost

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Garden
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: ebf8b05e3719b33449790f3bc337c608, type: 3}
-  uiSprite: {fileID: 47909132, guid: aac56aa537811024587f4c92925ee6cf, type: 3}
+  uiSprite: {fileID: -5699104055798326421, guid: 9da1275b8c2432d46815ef36499687a2, type: 3}
+  buildingName: Community Garden

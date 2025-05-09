@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Landfill
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: b794797f9977365418b9b422a405f33b, type: 3}
-  uiSprite: {fileID: 1859625066, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  uiSprite: {fileID: -7437878994696180414, guid: a3d97f6a5a7d6b842b9dcc77ac9f88ac, type: 3}
+  buildingName: Landfill

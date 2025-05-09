@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: WindFarm
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: a860bef6b5b6f0c43ace9027a8049310, type: 3}
-  uiSprite: {fileID: 0}
+  uiSprite: {fileID: 5629372615036235299, guid: f63e8047a0c57f74d948536ed03080a2, type: 3}
+  buildingName: Wind Farm

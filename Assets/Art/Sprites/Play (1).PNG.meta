@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 574830e4cf2718f4d9d7c69ac865fc68
+guid: 9510a501a2209644993cc20bc25a2544
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5435936245034971430
-    second: garden_0
+      213: 2580805673824770431
+    second: Play (1)_0
+  - first:
+      213: 2878007759291232521
+    second: Play (1)_1
+  - first:
+      213: -7981970449651080930
+    second: Play (1)_2
+  - first:
+      213: 2819060864318977896
+    second: Play (1)_3
+  - first:
+      213: 4856851750700748783
+    second: Play (1)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: garden_0
+      name: Play (1)_0
       rect:
         serializedVersion: 2
-        x: 516
-        y: 191
-        width: 1193
-        height: 722
+        x: 265
+        y: 1298
+        width: 7
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 621fafac633507b40800000000000000
-      internalID: 5435936245034971430
+      spriteID: f7953ae261dd0d320800000000000000
+      internalID: 2580805673824770431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play (1)_1
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 370
+        width: 772
+        height: 931
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9013f590fccb0f720800000000000000
+      internalID: 2878007759291232521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 937
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11e1e49a285a3190800000000000000
+      internalID: -7981970449651080930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play (1)_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 542
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86730f98be05f1720800000000000000
+      internalID: 2819060864318977896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 344
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef804f3fe0076340800000000000000
+      internalID: 4856851750700748783
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Play (1)_0: 2580805673824770431
+      Play (1)_1: 2878007759291232521
+      Play (1)_2: -7981970449651080930
+      Play (1)_3: 2819060864318977896
+      Play (1)_4: 4856851750700748783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

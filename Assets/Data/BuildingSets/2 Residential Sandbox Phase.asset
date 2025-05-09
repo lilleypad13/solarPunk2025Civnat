@@ -20,5 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 769e0ab99c8a1234eafb04c268bf0b54, type: 2}
   - {fileID: 11400000, guid: 3fb001d4d6fb0954684072ea23415a68, type: 2}
   - {fileID: 11400000, guid: af0b8e4239b13584289f548fe8b1d008, type: 2}
-  choiceUIIcon: {fileID: 0}
+  - {fileID: 11400000, guid: e2139c01c0ef7b5449ecd8d2767999ba, type: 2}
+  choiceUIIcon: {fileID: -7411974349392773033, guid: 4daa3867886a2614388dd91b1cd37ebd, type: 3}
   choiceText: 

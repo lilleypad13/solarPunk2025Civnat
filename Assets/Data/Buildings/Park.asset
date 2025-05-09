@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Park
   m_EditorClassIdentifier: 
   buildingPrefab: {fileID: 7660727817868493310, guid: 5a640de4d7d82e34ab98f01540833459, type: 3}
-  uiSprite: {fileID: -1925683916, guid: 2fbaae317ab79d2499a80ad6e7901680, type: 3}
+  uiSprite: {fileID: -734796840722011684, guid: 9a2ab6e5bd5c10b4c944b38b0d336018, type: 3}
+  buildingName: Park
