@@ -30,6 +30,7 @@ public class WorldStateSystem : MonoBehaviour
 
     [Header("TESTING")]
     [SerializeField] private Gradient grassPollutionGradient;
+    [SerializeField] private bool isTesting = false;
 
     // Events
     public static event Action<WorldStateSystem> OnWorldTickCompleted;
@@ -58,19 +59,22 @@ public class WorldStateSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (isTesting)
         {
-            CountCurrentDefaultTiles();
-        }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                CountCurrentDefaultTiles();
+            }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            WorldTick();
-        }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                WorldTick();
+            }
 
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            OnEndWorldState?.Invoke(this);
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                OnEndWorldState?.Invoke(this);
+            }
         }
     }
 
