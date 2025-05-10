@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameStateDisplayController : MonoBehaviour
 {
-    [SerializeField] private TMP_Text buildingsLeftInSetCount;
+    //[SerializeField] private TMP_Text buildingsLeftInSetCount;
     [SerializeField] private TMP_Text generationInfoText;
     [SerializeField] private TMP_Text turnInfoText;
 
@@ -24,9 +24,9 @@ public class GameStateDisplayController : MonoBehaviour
     private void UpdateInfo()
     {
         // Building Count Text
-        int buildingsLeftCount = GameManager.Instance.ActiveSet.Data.CountBuildingsToPlace
-            - GameManager.Instance.ActiveSet.BuildingsPlacedDuringSet.Count;
-        buildingsLeftInSetCount.text = $"Buildings to Place this Set: {buildingsLeftCount}";
+        //int buildingsLeftCount = GameManager.Instance.ActiveSet.Data.CountBuildingsToPlace
+        //    - GameManager.Instance.ActiveSet.BuildingsPlacedDuringSet.Count;
+        //buildingsLeftInSetCount.text = $"Buildings to Place this Set: {buildingsLeftCount}";
 
         // Generation Text
         generationInfoText.text = $"Generation: {GameManager.Instance.GenerationIndex + 1} / {GameManager.Instance.ProgressionDatas.Length}";

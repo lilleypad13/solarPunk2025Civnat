@@ -25,17 +25,17 @@ public class BigValuesDisplayController : MonoBehaviour
 
     private void UpdateDisplay()
     {
-        pollutionText.text = $"Pollution: 0";
-        ecoText.text = $"Eco: 0";
-        energyText.text = $"Energy: 0";
-        communityText.text = $"Community: 0";
+        pollutionText.text = $" 0";
+        ecoText.text = $" 0";
+        energyText.text = $" 0";
+        communityText.text = $" 0";
     }
 
     private void UpdateDisplay(WorldStateSystem worldStateSystem)
     {
-        pollutionText.text = $"Pollution: {worldStateSystem.TotalPollution}";
-        ecoText.text = $"Eco: {worldStateSystem.TotalEco}";
-        energyText.text = $"Energy: {worldStateSystem.TotalEnergy}";
-        communityText.text = $"Community: {worldStateSystem.TotalCommunityHealth}";
+        pollutionText.text = $" {worldStateSystem.TotalPollution}";
+        ecoText.text = $" {worldStateSystem.TotalEco}";
+        energyText.text = $" {worldStateSystem.TotalEnergy}";
+        communityText.text = $" {worldStateSystem.TotalCommunityHealth}";
     }
 }
